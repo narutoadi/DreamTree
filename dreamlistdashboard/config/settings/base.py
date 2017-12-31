@@ -56,6 +56,7 @@ LOCAL_APPS = [
     # custom users app
     'dreamlistdashboard.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'manageDreams',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
