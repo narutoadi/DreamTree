@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-# pushing with my own directory
+# pushing with office git
 class Dream(models.Model):
     title = models.CharField(max_length=500)
     description = models.CharField(max_length=2000, null=True)
