@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <!-- Your stuff: Third-party CSS libraries go here -->
-    
+
     <!-- This file stores project-specific CSS -->
     <link href="{% static 'css/project.css' %}" rel="stylesheet">
-    
+
     {% endblock %}
 
   </head>
@@ -78,6 +78,10 @@
 
       {% block content %}
         <p>Use this document as a way to quick start any new project.</p>
+      <a href="/manage/dreams/"><h1>I have a new dream!</h1></a><br/>
+        <h1>What can I do right now?</h1><br/>
+        <h1>I just finished/completed/rejected a dream.</h1><br/>
+        <h1>This can be a gift for me!!</h1><br/>
       {% endblock content %}
 
     </div> <!-- /container -->
@@ -96,11 +100,11 @@
       <!-- Your stuff: Third-party javascript libraries go here -->
 
       <!-- place project specific Javascript in this file -->
-      
+
       <script src="{% static 'js/project.js' %}"></script>
-      
+
 
     {% endblock javascript %}
   </body>
 </html>
- 
+

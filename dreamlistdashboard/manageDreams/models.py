@@ -25,4 +25,4 @@ class DreamDependency(models.Model):
 class DreamProgress(models.Model):
     dream = models.ForeignKey(Dream,on_delete=models.CASCADE)
     startDate = models.DateTimeField(auto_now=True)
-    endDate = models.DateTimeField();
+    endDate = models.DateTimeField()

@@ -15,7 +15,7 @@ urlpatterns = [
     # User management
     url(r'^users/', include('dreamlistdashboard.users.urls',namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
-    url(r'^manage/dreams/', include('manageDreams.urls'))
+    url(r'^manage/dreams/', include('manageDreams.urls', namespace='manageDreams'),name='manageDreams')
 
     # Your stuff: custom urls includes go here
 
