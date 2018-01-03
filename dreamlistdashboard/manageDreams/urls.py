@@ -4,5 +4,6 @@ from . import views
 
 app_name = 'manageDreams'
 urlpatterns = [
-    path('', views.index, name='manageDreams1'),
+    path('add', views.post_dream, name='post_dream_new'),
+    path('show', views.show_dream, name='show_all_dreams'),
 ]

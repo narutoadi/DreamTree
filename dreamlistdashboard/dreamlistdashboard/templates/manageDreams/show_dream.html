@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% for dream in allDreams %}
+    {{ dream.title }}
+    {{ dream.description }}
+    {{ dream.weight }}
+    {{ dream.duration }}
+    {{ dream.deadline }}
+    {{ dream.created }}
+  {% endfor %}
+{% endblock %}
