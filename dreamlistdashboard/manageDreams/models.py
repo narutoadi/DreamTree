@@ -6,8 +6,8 @@ class Dream(models.Model):
     title = models.CharField(max_length=500)
     description = models.CharField(max_length=2000, null=True)
     weight = models.FloatField()
-    duration = models.DurationField()
-    deadline = models.DateField()
+    duration = models.DurationField()       #In minutes
+    deadline = models.DateField()           #mm/dd/yy
     created = models.DateTimeField(auto_now=True)
 
 class DreamFiles(models.Model):

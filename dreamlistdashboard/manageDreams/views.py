@@ -21,3 +21,7 @@ def show_dream(request):
     except Dream.DoesNotExist:
         raise Http404("No dream exists")
     return render(request, 'manageDreams/show_dream.html', {'allDreams': allDreams})
+
+def done_with_dream(request):
+    return render(request, 'manageDreams/done_with_dream.html',{})
+
