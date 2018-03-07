@@ -1,7 +1,7 @@
 DreamListDashboard
 ==================
 
-For those who call their To-do list their dream list
+**For people with a lot of dreams, it is important to track their dreams' transitioning into reality.**
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
@@ -10,66 +10,58 @@ For those who call their To-do list their dream list
 
 :License: MIT
 
+Feature List
+------------
+ * Break down your dreams into a hierarchical structure of traceable tasks
+ * Out of all dreams select the one you should work on right now, based on availability of time.
+ * Get awarded on making a dream into reality
 
-Settings
---------
+Setting Project Locally ( one time setup)
+-----------------------------------------
+* Create a python3 virtual environment
 
-Moved to settings_.
+.. code-block::
 
-.. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
+ mkvirtualenv dldEnv
 
-Basic Commands
---------------
+* Clone the git repo
 
-Setting Up Your Users
-^^^^^^^^^^^^^^^^^^^^^
+.. code-block::
 
-* To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll see a "Verify Your E-mail Address" page. Go to your console to see a simulated email verification message. Copy the link into your browser. Now the user's email should be verified and ready to go.
+ git clone https://github.com/narutoadi/DreamListDashboard.git
 
-* To create an **superuser account**, use this command::
+* Open the project in virtual environment and install the requirements
 
-    $ python manage.py createsuperuser
+.. code-block::
 
-For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
+ workon dldEnv
+ cd DreamListDashboard/dreamListDashboard
+ pip install -r requirements/base.txt
+ pip install -r requirements/local.txt
 
-Test coverage
-^^^^^^^^^^^^^
+* Database setup
 
-To run the tests, check your test coverage, and generate an HTML coverage report::
+.. code-block::
 
-    $ coverage run manage.py test
-    $ coverage html
-    $ open htmlcov/index.html
-
-Running tests with py.test
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-::
-
-  $ py.test
-
-Live reloading and Sass CSS compilation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Moved to `Live reloading and SASS compilation`_.
-
-.. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
+  TBD postgres setup and python migration
 
 
+Running Project Locally
+-----------------------
+* Enter the virtualenv
 
+.. code-block::
 
+  workon dldEnv
 
-Sentry
-^^^^^^
+* Enter the manage.py
 
-Sentry is an error logging aggregator service. You can sign up for a free account at  https://sentry.io/signup/?code=cookiecutter  or download and host it yourself.
-The system is setup with reasonable defaults, including 404 logging and integration with the WSGI application.
+.. code-block::
 
-You must set the DSN url in production.
+  cd DreamListDashboard/dreamListDashboard
 
+* Run server
 
-Deployment
-----------
+.. code-block::
 
-
-
+ python manage.py runserver
