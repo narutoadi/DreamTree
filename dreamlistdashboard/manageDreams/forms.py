@@ -5,5 +5,6 @@ class addDreamForm(forms.ModelForm):
 
     class Meta:
         model = Dream
-        fields = ('title','description','deadline','weight','duration',)
+        #checking a commit
+        fields = ('title','description','deadline','weight','duration')
 
