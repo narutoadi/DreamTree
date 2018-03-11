@@ -49,6 +49,7 @@ THIRD_PARTY_APPS = [
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
+    'webpack_loader'
 ]
 
 # Apps specific for this project go here.
@@ -58,6 +59,12 @@ LOCAL_APPS = [
     # Your stuff: custom apps go here
     'manageDreams',
 ]
+WEBPACK_LOADER = {
+    'DEFAULT': {
+            'BUNDLE_DIR_NAME': 'bundles/',
+            'STATS_FILE': ROOT_DIR.path('frontend/webpack-stats.dev.json').__str__(),
+        }
+}
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

@@ -12,21 +12,22 @@ Welcome to DreamListDashboard's documentation!
 
 
 
-*********************************************
-Welcome to DreamListDashboard's documentation
-*********************************************
+Chapter 1 Hierarchical Dream Structure
+======================================
 
-Hierarchical Dream Structure
-############################
 
-Goal
-****
+1.1 Goal
+--------
+* Any dream from the dream list can have any level of associated hierarchy.
+* Time associated with a dream will be greater than or equal to sum of times of all its child dreams.
+* A parent dream can have multiple child dreams and vice versa.
+*
 
-Database design
-***************
+1.2 Database design
+-------------------
 
-Django Form design
-******************
+1.3 UI design
+-------------
 
-UI design
-*********
+1.4 Business Logic
+------------------
