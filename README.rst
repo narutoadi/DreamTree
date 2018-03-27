@@ -19,10 +19,10 @@ Feature List
 
 Project Structure
 -----------------
-* There is one frontend and two backends.
-* Frontend uses React-framework.
-* The two backends (one in django and other in spring-boot) provide similar rest-apis on different ports.
-* You can set port in frontend to choose anyone backend.
+ * There is one frontend and two backends.
+ * Frontend uses React-framework.
+ * The two backends (one in django and other in spring-boot) provide similar rest-apis on different ports.
+ * You can set port in frontend to choose anyone backend.
 
 Setting Project Locally ( one time setup)
 -----------------------------------------
@@ -42,23 +42,25 @@ Setting Project Locally ( one time setup)
 
 .. code-block::
 
- workon dldEnv
- cd DreamListDashboard/dreamListDashboard
+ workon <virtual env name>
+ cd DreamListDashboard/backendDjango/dreamlist
  pip install -r requirements/local.txt
 
 * Database setup
-    install postgres sql
-    create db 'dreamlist'
-    set database url in environment variable
 
 .. code-block::
-  Windows - set DATABASE_URL=postgres://username:password@127.0.0.1:5432/dreamlist
-  Linus/osx - export DATABASE_URL=postgres://username:password@127.0.0.1:5432/dreamlist
+
+ install postgres sql
+ create db 'dreamlist'
+ set database url in environment variable
+ Windows - set DATABASE_URL=postgres://username:password@127.0.0.1:5432/dreamlist
+ Linus/osx - export DATABASE_URL=postgres://username:password@127.0.0.1:5432/dreamlist
 
 
 Running Project Locally
 -----------------------
-# Running Django Backend Locally
+*. Running Django Backend Locally
+
 * Enter the virtualenv
 
 .. code-block::
