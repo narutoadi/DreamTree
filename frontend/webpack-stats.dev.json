@@ -1,0 +1,159 @@
+{
+  "errors": [
+    "./src/index.js\nModule parse failed: Unexpected token (7:16)\nYou may need an appropriate loader to handle this file type.\n| import registerServiceWorker from './registerServiceWorker';\n| \n| ReactDOM.render(<App />, document.getElementById('root'));\n| registerServiceWorker();\n| "
+  ],
+  "warnings": [],
+  "version": "4.1.1",
+  "hash": "365ba02786aac7b09fe9",
+  "time": 102,
+  "builtAt": 1520878836261,
+  "publicPath": "",
+  "outputPath": "C:\\Users\\adimishr\\DreamListDashboard\\dreamlistdashboard\\frontend\\dist",
+  "assetsByChunkName": {
+    "main": "main.js"
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 3170,
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "main.js"
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "id": "main",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 288,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "hash": "cfe6c54e663f0a142556",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "id": "./src/index.js",
+          "identifier": "C:\\Users\\adimishr\\DreamListDashboard\\dreamlistdashboard\\frontend\\src\\index.js",
+          "name": "./src/index.js",
+          "index": 0,
+          "index2": 0,
+          "size": 288,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 51,
+            "building": 10
+          },
+          "failed": true,
+          "errors": 1,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src",
+              "loc": "main"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "throw new Error(\"Module parse failed: Unexpected token (7:16)\\nYou may need an appropriate loader to handle this file type.\\n| import registerServiceWorker from './registerServiceWorker';\\n| \\n| ReactDOM.render(<App />, document.getElementById('root'));\\n| registerServiceWorker();\\n| \");"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "./src/index.js",
+      "identifier": "C:\\Users\\adimishr\\DreamListDashboard\\dreamlistdashboard\\frontend\\src\\index.js",
+      "name": "./src/index.js",
+      "index": 0,
+      "index2": 0,
+      "size": 288,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "main"
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 51,
+        "building": 10
+      },
+      "failed": true,
+      "errors": 1,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src",
+          "loc": "main"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "throw new Error(\"Module parse failed: Unexpected token (7:16)\\nYou may need an appropriate loader to handle this file type.\\n| import registerServiceWorker from './registerServiceWorker';\\n| \\n| ReactDOM.render(<App />, document.getElementById('root'));\\n| registerServiceWorker();\\n| \");"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}

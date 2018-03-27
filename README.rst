@@ -17,13 +17,20 @@ Feature List
  * Get awarded on making a dream into reality (version 3.0)
  * Show dream analytics page (version 4.0)
 
+Project Structure
+-----------------
+* There is one frontend and two backends.
+* Frontend uses React-framework.
+* The two backends (one in django and other in spring-boot) provide similar rest-apis on different ports.
+* You can set port in frontend to choose anyone backend.
+
 Setting Project Locally ( one time setup)
 -----------------------------------------
 * Create a python3 virtual environment
 
 .. code-block::
 
- mkvirtualenv dldEnv
+ mkvirtualenv --python=python3 <virtual env name>
 
 * Clone the git repo
 
@@ -37,29 +44,44 @@ Setting Project Locally ( one time setup)
 
  workon dldEnv
  cd DreamListDashboard/dreamListDashboard
- pip install -r requirements/base.txt
  pip install -r requirements/local.txt
 
 * Database setup
+    install postgres sql
+    create db 'dreamlist'
+    set database url in environment variable
 
 .. code-block::
-
-  TBD postgres setup and python migration
+  Windows - set DATABASE_URL=postgres://username:password@127.0.0.1:5432/dreamlist
+  Linus/osx - export DATABASE_URL=postgres://username:password@127.0.0.1:5432/dreamlist
 
 
 Running Project Locally
 -----------------------
+# Running Django Backend Locally
 * Enter the virtualenv
 
 .. code-block::
 
-  workon dldEnv
+  workon <virtual env name>
 
 * Enter the manage.py
 
 .. code-block::
 
-  cd DreamListDashboard/dreamListDashboard
+  cd DreamListDashboard/backendDjango
+
+* Migrate the database
+
+.. code-block::
+
+    python manage.py migrate
+
+* Create superuser
+
+.. code-block::
+
+    python manage.py createsuperuser
 
 * Run server
 
