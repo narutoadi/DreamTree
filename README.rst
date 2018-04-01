@@ -1,5 +1,5 @@
-DreamListDashboard
-==================
+DreamTree
+=========
 
 **For people with a lot of dreams, it is important to track their dreams' transitioning into reality.**
 
@@ -36,14 +36,14 @@ Setting Project Locally ( one time setup)
 
 .. code-block::
 
- git clone https://github.com/narutoadi/DreamListDashboard.git
+ git clone https://github.com/narutoadi/DreamTree.git
 
 * Open the project in virtual environment and install the requirements
 
 .. code-block::
 
  workon <virtual env name>
- cd DreamListDashboard/backendDjango/dreamlist
+ cd DreamTree/backendDjango/dreamlist
  pip install -r requirements/local.txt
 
 * Database setup
